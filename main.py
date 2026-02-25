@@ -52,7 +52,6 @@ if __name__ == "__main__":
     create_token()
     with open(INPUT_FILE, "r") as f:
         data = yaml.safe_load(f)
-        print(data)
     items = data.get("exclusions", [])
     for item in items:
         domain = item.get("domain")
